@@ -67,7 +67,7 @@ namespace Kogane
                     : Input.GetTouch( 0 ).position
                 ;
 
-            touchEvent( screenPoint );
+            touchEvent?.Invoke( screenPoint );
         }
 
         /// <summary>
