@@ -46,6 +46,16 @@ namespace Kogane
         // 関数
         //================================================================================
         /// <summary>
+        /// 破棄される時に呼び出されます
+        /// </summary>
+        private void OnDestroy()
+        {
+            OnStarted = null;
+            OnMoved   = null;
+            OnEnded   = null;
+        }
+
+        /// <summary>
         /// 毎フレーム呼び出されます
         /// </summary>
         private void Update()
